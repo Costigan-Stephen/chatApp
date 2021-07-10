@@ -1,0 +1,211 @@
+input {
+    border: 2pt solid #333333;
+}
+
+input::selection {
+    border: none;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    overflow-y: auto;
+    max-width: 50%;
+    padding: 0;
+}
+
+ul {
+    padding: 15px;
+}
+
+li {
+    max-width: 70%;
+    overflow-anchor: auto;
+}
+
+.nav {
+    background-color: #3173ff;
+    height: 50px;
+}
+
+.nav_inner {
+    max-width: 700px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_link {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.nav_link:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.chat_area {
+    height: 80vh;
+    overflow-y: auto;
+    max-width: 700px;
+    background-color: #F8F8FF;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form button {
+    width: 200px;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    background-color: black;
+    color: white;
+}
+
+.login {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 40vh;
+    margin-bottom: auto;
+}
+
+#username {
+    background-color: #F8F8FF;
+    padding: 10px;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    width: 100%;
+}
+
+.chat_area ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul.chat li.message {
+    border: solid #DCDCDC 0.5rem;
+    border-radius: 1rem;
+    background-color: #F8F8FF;
+    margin: 1rem 0 1rem 0;
+    width: max-content;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+ul.chat li.uMessage {
+    border: solid #008000 0.5rem;
+    margin-left: auto;
+    background-color: #008000;
+    color: #F8F8FF;
+}
+
+ul.chat .welcome {
+    border-radius: 1rem;
+    max-width: 100%;
+    margin: 1rem 0 1rem 0;
+    width: max-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.input {
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+    padding: 0.5rem 0;
+    border-top: 5px solid #747474;
+}
+
+.input textarea {
+    border: none;
+    /* border-radius: 6px; */
+    width: 500px;
+    background-color: #F8F8FF;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    resize: none;
+    border-top: 2pt solid #333333;
+    border-bottom: 2pt solid #333333;
+    border-left: 2pt solid #333333;
+}
+
+#message::selection {
+    border: 2pt solid #008000;
+}
+
+.input_block {
+    margin: 0 auto 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.input_block button,
+.input button {
+    background-color: #4b4b4b;
+    border: none;
+    color: white;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notice {
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.displayname {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+input:hover,
+textarea:hover {
+    border-top: 2pt solid rgb(49, 131, 255);
+    border-bottom: 2pt solid rgb(49, 131, 255);
+    border-left: 2pt solid rgb(49, 131, 255);
+}
+
+input:focus,
+textarea:focus {
+    border-top: 2pt solid #3173ff;
+    border-bottom: 2pt solid #3173ff;
+    border-left: 2pt solid #3173ff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}

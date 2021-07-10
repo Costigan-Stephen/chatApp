@@ -1,0 +1,36 @@
+<% include ../includes/header.ejs %>
+    <link href="/css/pr12.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <% include ../includes/nav.ejs %>
+            <div class="container chat_area">
+                <div class="displayname" id="errMsg">
+                    <!-- Blank area for login error messages -->
+                </div>
+                <ul id="chatBox" class="chat">
+                </ul>
+            </div>
+            <% if (user) { %>
+                <div class="input">
+                    <p class="displayname">@
+                        <%= user %>
+                    </p>
+                    <div class="input_block">
+                        <textarea name="message" id="message"></textarea>
+                        <button onclick="postMessage()">Send</button>
+                    </div>
+                    <input type="hidden" value="<%= user %>" name="user" id="user"><br/>
+
+                </div>
+                <% } else { %>
+                    <div class="input">
+                        <p class="displayname notice">No login, view only.</p><br/>
+                        <button class="displayname error" onclick="window.location.href='/'">Log in to chat</button>
+                    </div>
+                    <% } %>
+    </body>
+
+    </html>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/pr12-chat.js"></script>
